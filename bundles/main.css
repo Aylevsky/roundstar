@@ -663,43 +663,42 @@ input {
   height: 100%;
   padding: 24px 20px;
   width: 300px;
-  row-gap: 32px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  grid-row-gap: 32px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-flex-line-pack: start;
+      align-content: start;
+}
+
+.mob-navigation__wrapper * {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
 }
 
 .mob-navigation__navigation {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 100%;
-  row-gap: 12px;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 12px;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
 }
 
 .mob-navigation__link {
   -webkit-column-gap: 12px;
      -moz-column-gap: 12px;
           column-gap: 12px;
+  display: -ms-grid;
+  display: grid;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #E6E6E6;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   background: -webkit-gradient(linear, left top, right top, from(#6A11CB), to(#2A73EC));
   background: -o-linear-gradient(left, #6A11CB 0%, #2A73EC 100%);
   background: linear-gradient(90deg, #6A11CB 0%, #2A73EC 100%);
@@ -723,29 +722,23 @@ input {
 }
 
 .mob-navigation__link-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
   height: 100%;
   width: 100%;
   padding: 12px;
   -webkit-column-gap: 12px;
      -moz-column-gap: 12px;
           column-gap: 12px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: grid;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #E6E6E6;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   z-index: 999999;
 }
 
