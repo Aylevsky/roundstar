@@ -1,0 +1,352 @@
+/*
+  * LINE HEIGHT
+*/
+
+/*
+  * SIZE
+*/
+
+/*
+  * LINE HEIGHT
+*/
+
+/*
+  * SIZE
+*/
+
+.no-webp .advantages__wrapper {
+  background-image: url("../../images/blocks/index/advantages/bg.png"); }
+
+.advantages__wrapper {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-top: 64px;
+  padding-right: 64px;
+  padding-bottom: 64px;
+  padding-left: 64px;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.advantages__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  row-gap: 24px;
+  background: -webkit-gradient(linear, left top, right top, from(#2C2C2C), to(#3D3D3D));
+  background: -o-linear-gradient(left, #2C2C2C 0%, #3D3D3D 100%);
+  background: linear-gradient(90deg, #2C2C2C 0%, #3D3D3D 100%);
+  -webkit-box-shadow: 0px 10px 46px rgba(0, 0, 0, 0.16), 0px 6px 0px #2B72EC;
+          box-shadow: 0px 10px 46px rgba(0, 0, 0, 0.16), 0px 6px 0px #2B72EC;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.no-webp .banner {
+  background-image: url("../../images/blocks/index/banner/bg.png"); }
+
+.banner {
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: right center;
+  position: relative;
+}
+
+.banner::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(106, 17, 203, 0)), to(#2A73EC));
+  background: -o-linear-gradient(left, rgba(106, 17, 203, 0) 0%, #2A73EC 100%);
+  background: linear-gradient(90deg, rgba(106, 17, 203, 0) 0%, #2A73EC 100%);
+  border-radius: 2px;
+  height: 3px;
+  width: 1050px;
+}
+
+.banner__content {
+  max-width: 600px;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.banner .h2 {
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.banner .button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.games {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.games__wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 24px;
+  grid-column-gap: 24px;
+}
+
+.games__game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  border-radius: 8px;
+  background: -webkit-gradient(linear, left top, right top, from(#2C2C2C), to(#3D3D3D));
+  background: -o-linear-gradient(left, #2C2C2C 0%, #3D3D3D 100%);
+  background: linear-gradient(90deg, #2C2C2C 0%, #3D3D3D 100%);
+}
+
+.games__game .h5 {
+  text-align: center;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.games__game:hover .games__img-hover {
+  opacity: 1;
+}
+
+.games__mob-btn {
+  padding: 0 !important;
+  width: auto !important;
+  margin: 16px 12px;
+  margin-top: auto;
+}
+
+.games__img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.games__img-wrap {
+  position: relative;
+}
+
+.games__img-wrap img,
+.games__img-wrap picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.games .button {
+  padding: 0 28px;
+}
+
+.index {
+  background: #20212E;
+}
+
+@media (min-width: 768px) {
+  .advantages__wrapper {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 32px;
+  }
+
+  .banner .paragraph {
+    margin-bottom: 48px;
+  }
+
+  .banner .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .games__wrapper {
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (auto)[3];
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .games__mob-btn {
+    display: none;
+  }
+}
+
+@media (min-width: 1104px) {
+  .banner {
+    min-height: calc(100vh - 100px);
+  }
+
+  .games__wrapper {
+    -ms-grid-columns: (1fr)[5];
+    grid-template-columns: repeat(5, 1fr);
+    -ms-grid-rows: (auto)[2];
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
+@media (max-width: 1280px) {
+  .advantages__wrapper {
+    margin-top: calc(42px + 58 * ((100vw - 360px) / 920));
+  }
+
+  .advantages__wrapper {
+    margin-bottom: calc(42px + 58 * ((100vw - 360px) / 920));
+  }
+
+  .advantages__wrapper {
+    padding-top: calc(32px + 32 * ((100vw - 360px) / 920));
+  }
+
+  .advantages__wrapper {
+    padding-right: calc(24px + 40 * ((100vw - 360px) / 920));
+  }
+
+  .advantages__wrapper {
+    padding-bottom: calc(32px + 32 * ((100vw - 360px) / 920));
+  }
+
+  .advantages__wrapper {
+    padding-left: calc(24px + 40 * ((100vw - 360px) / 920));
+  }
+
+  .banner .h2 {
+    margin-top: calc(4px + 8 * ((100vw - 360px) / 920));
+  }
+
+  .banner .h2 {
+    margin-bottom: calc(12px + 12 * ((100vw - 360px) / 920));
+  }
+
+  .games__game .h5 {
+    margin-top: calc(16px + 8 * ((100vw - 360px) / 920));
+  }
+
+  .games__game .h5 {
+    margin-bottom: calc(16px + 8 * ((100vw - 360px) / 920));
+  }
+}
+
+@media (max-width: 768px) {
+  .advantages__wrapper {
+    grid-row-gap: 32px;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .banner {
+    min-height: calc(100vh - 70px);
+  }
+
+  .no-webp .banner {
+    background-image: url("../../images/blocks/index/banner/mob-bg.png"); }
+
+  .banner {
+    margin-top: 101px;
+    background-size: cover;
+    background-position: right bottom;
+  }
+
+  .banner::after {
+    content: none;
+  }
+
+  .banner .button {
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+
+  .banner__content {
+    height: 100%;
+  }
+
+  .games__wrapper {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (auto)[5];
+    grid-template-rows: repeat(5, auto);
+  }
+
+  .games__game:hover .games__img-hover {
+    display: none;
+  }
+
+  .games .button {
+    width: 100%;
+    height: 52px;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 1280px) {
+  .banner {
+    margin-top: calc(70px + 31 * ((100vw - 360px) / 920));
+  }
+
+  .games .button {
+    height: calc(40px + 12 * ((100vw - 360px) / 920));
+  }
+}
+
+.webp .advantages__wrapper { background-image: url(../../images/blocks/index/advantages/bg.webp); }
+
+.webp .banner { background-image: url(../../images/blocks/index/banner/bg.webp); }
+
+@media (max-width: 768px) {
+
+  .webp .banner { background-image: url(../../images/blocks/index/banner/mob-bg.webp); } }
